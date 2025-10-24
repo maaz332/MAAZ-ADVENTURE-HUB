@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GetYourGuide | Discover & Book Amazing Tours</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
+      <div class="flex items-center space-x-2">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="logo" class="w-8 h-8">
+        <h1 class="font-bold text-xl text-blue-600">Maaz Adventure Hub</h1>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="#" class="hover:text-blue-600">Home</a>
+        <a href="#" class="hover:text-blue-600">Destinations</a>
+        <a href="#" class="hover:text-blue-600">Tours</a>
+        <a href="#" class="hover:text-blue-600">About</a>
+        <a href="#" class="hover:text-blue-600">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <nav class="flex flex-col text-center py-3 space-y-3">
+        <a href="#" class="hover:text-blue-600">Home</a>
+        <a href="#" class="hover:text-blue-600">Destinations</a>
+        <a href="#" class="hover:text-blue-600">Tours</a>
+        <a href="#" class="hover:text-blue-600">About</a>
+        <a href="#" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-[500px]" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-4">
+      <h2 class="text-3xl md:text-5xl font-bold mb-4">Discover the World's Best Tours</h2>
+      <p class="max-w-2xl mb-6 text-lg">Book unforgettable experiences, adventures, and cultural tours at amazing destinations.</p>
+      <div class="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
+        <input type="text" placeholder="Where to?" class="px-4 py-3 rounded-lg w-full sm:w-64 text-gray-800" />
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold">
+          <i class="fa fa-search mr-2"></i> Search
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Destinations -->
+  <section class="max-w-7xl mx-auto py-16 px-4">
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">Popular Destinations</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-3">
+        <img src="../Paris.jpg" alt="" class="rounded-lg h-48 w-full object-cover mb-3">
+        <h3 class="font-semibold text-lg">Paris</h3>
+        <p class="text-sm text-gray-600">Romantic city with art, cafes, and culture.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-3">
+        <img src="../Dubai.webp" alt="" class="rounded-lg h-48 w-full object-cover mb-3">
+        <h3 class="font-semibold text-lg">Dubai</h3>
+        <p class="text-sm text-gray-600">Luxury shopping, desert safaris, and sky-high towers.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-3">
+        <img src="../Bali.jpg" alt="" class="rounded-lg h-48 w-full object-cover mb-3">
+        <h3 class="font-semibold text-lg">Bali</h3>
+        <p class="text-sm text-gray-600">Tropical paradise with beaches and temples.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-3">
+        <img src="../Newyork.webp" alt="" class="rounded-lg h-48 w-full object-cover mb-3">
+        <h3 class="font-semibold text-lg">New York</h3>
+        <p class="text-sm text-gray-600">City that never sleeps, full of energy and lights.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="bg-blue-600 text-white py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-10">Why Choose GetYourGuide?</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <i class="fa fa-check-circle text-4xl mb-3"></i>
+          <h3 class="font-semibold text-lg">Trusted Reviews</h3>
+          <p class="text-sm text-blue-100">Thousands of happy travelers worldwide.</p>
+        </div>
+        <div>
+          <i class="fa fa-headset text-4xl mb-3"></i>
+          <h3 class="font-semibold text-lg">24/7 Support</h3>
+          <p class="text-sm text-blue-100">Always here to help with your bookings.</p>
+        </div>
+        <div>
+          <i class="fa fa-tags text-4xl mb-3"></i>
+          <h3 class="font-semibold text-lg">Best Price Guarantee</h3>
+          <p class="text-sm text-blue-100">Find better? We'll match or beat it.</p>
+        </div>
+        <div>
+          <i class="fa fa-plane text-4xl mb-3"></i>
+          <h3 class="font-semibold text-lg">Easy Booking</h3>
+          <p class="text-sm text-blue-100">Book tours instantly with flexible options.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-10">
+    <div class="max-w-7xl mx-auto px-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <h3 class="font-semibold text-white mb-4">About Us</h3>
+        <p class="text-sm">We help travelers discover amazing tours and experiences worldwide.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white mb-4">Company</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white">Careers</a></li>
+          <li><a href="#" class="hover:text-white">Blog</a></li>
+          <li><a href="#" class="hover:text-white">Press</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white mb-4">Support</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white">FAQs</a></li>
+          <li><a href="#" class="hover:text-white">Help Center</a></li>
+          <li><a href="#" class="hover:text-white">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white mb-4">Follow Us</h3>
+        <div class="flex space-x-4 text-lg">
+          <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="hover:text-sky-400"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-sm text-gray-500 mt-10 border-t border-gray-800 pt-4">
+      © 2025 Maaz Bin Khalid . All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
